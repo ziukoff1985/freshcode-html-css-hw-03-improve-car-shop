@@ -22,6 +22,9 @@ lib-cov
 coverage
 *.lcov
 
+# VS Code
+.vscode/
+
 # nyc test coverage
 .nyc_output
 

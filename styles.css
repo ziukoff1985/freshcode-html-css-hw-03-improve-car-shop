@@ -68,6 +68,15 @@ img {
   font-weight: 700;
   text-transform: uppercase;
   font-style: normal;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-link:hover {
+  color: teal;
+}
+
+.menu-item {
+  margin: 0;
 }
 
 .title {
@@ -227,4 +236,10 @@ th {
   border: 3px solid teal;
   text-align: center;
   font-weight: 700;
+}
+
+/* Form styles */
+
+select {
+  width: 100px;
 }

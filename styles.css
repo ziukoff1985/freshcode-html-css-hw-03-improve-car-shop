@@ -195,3 +195,36 @@ footer {
   width: 25%;
   word-break: break-all;
 }
+
+/* Table styles */
+
+.table-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+caption {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  text-decoration: underline;
+}
+
+table,
+thead,
+tbody {
+  border: 3px solid teal;
+  border-collapse: separate;
+  width: 100%;
+}
+
+td,
+tr,
+th {
+  border: 3px solid teal;
+  text-align: center;
+  font-weight: 700;
+}

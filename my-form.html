@@ -3,7 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Order Form</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/icons/icon.ico"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -24,7 +29,7 @@
               <label for="first-name">First Name</label>
               <input
                 type="text"
-                name="name"
+                name="first-name"
                 id="first-name"
                 placeholder="Enter your first name"
               />
@@ -33,14 +38,14 @@
               <label for="last-name">Last Name</label>
               <input
                 type="text"
-                name="name"
+                name="last-name"
                 id="last-name"
                 placeholder="Enter your last name"
               />
             </div>
             <div class="input-wrapper">
               <label for="birthday">Birthday</label>
-              <input type="datetime-local" name="birthday id="birthday" />
+              <input type="datetime-local" name="birthday" id="birthday" />
             </div>
             <div>
               <fieldset>
@@ -48,11 +53,16 @@
                 <div class="radio-wrapper">
                   <div class="radio">
                     <label for="male">Male</label>
-                    <input type="radio" name="gender" id="male" />
+                    <input type="radio" name="gender" id="male" value="male" />
                   </div>
                   <div class="radio">
                     <label for="female">Female</label>
-                    <input type="radio" name="gender" id="female" />
+                    <input
+                      type="radio"
+                      name="gender"
+                      id="female"
+                      value="female"
+                    />
                   </div>
                 </div>
               </fieldset>
@@ -114,10 +124,10 @@
                 <option value="---" selected>---</option>
                 <option value="f-150">Ford F-150</option>
                 <option value="focus">Ford Focus</option>
-                <option value="toyota">Toyota Camry</option>
-                <option value="toyota">Toyota RAV4</option>
-                <option value="bmw">BMW 3 Series</option>
-                <option value="bmw">BMW X5</option>
+                <option value="camry">Toyota Camry</option>
+                <option value="rav4">Toyota RAV4</option>
+                <option value="3-series">BMW 3 Series</option>
+                <option value="x5">BMW X5</option>
               </select>
             </div>
             <div class="checkbox">
@@ -129,23 +139,23 @@
               <div class="radio-wrapper">
                 <div class="radio">
                   <label for="red">Red</label>
-                  <input type="radio" name="color" id="red" />
+                  <input type="radio" name="color" id="red" value="red" />
                 </div>
                 <div class="radio">
                   <label for="black">Black</label>
-                  <input type="radio" name="color" id="black" />
+                  <input type="radio" name="color" id="black" value="black" />
                 </div>
                 <div class="radio">
                   <label for="blue">Blue</label>
-                  <input type="radio" name="color" id="blue" />
+                  <input type="radio" name="color" id="blue" value="blue" />
                 </div>
                 <div class="radio">
                   <label for="white">White</label>
-                  <input type="radio" name="color" id="white" />
+                  <input type="radio" name="color" id="white" value="white" />
                 </div>
                 <div class="radio">
                   <label for="grey">Grey</label>
-                  <input type="radio" name="color" id="grey" />
+                  <input type="radio" name="color" id="grey" value="grey" />
                 </div>
               </div>
             </fieldset>

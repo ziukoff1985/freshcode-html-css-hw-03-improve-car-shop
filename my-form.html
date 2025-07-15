@@ -7,12 +7,20 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <article>
-      <section>
-        <form>
-          <fieldset>
-            <legend>Personal Info</legend>
-            <div>
+    <header class="header">
+      <nav>
+        <a href="./index.html" class="menu-link">Back to home</a>
+      </nav>
+      <a href="./index.html" class="logo-container">
+        <img src="./assets/images/main-logo.jpeg" alt="car-shop-logo" />
+      </a>
+    </header>
+    <article class="article-form">
+      <section class="section-form">
+        <form class="form">
+          <fieldset class="personal-info-wrapper">
+            <legend class="legend">Personal Info</legend>
+            <div class="input-wrapper">
               <label for="first-name">First Name</label>
               <input
                 type="text"
@@ -21,7 +29,7 @@
                 placeholder="Enter your first name"
               />
             </div>
-            <div>
+            <div class="input-wrapper">
               <label for="last-name">Last Name</label>
               <input
                 type="text"
@@ -30,24 +38,26 @@
                 placeholder="Enter your last name"
               />
             </div>
-            <div>
+            <div class="input-wrapper">
               <label for="birthday">Birthday</label>
               <input type="datetime-local" name="birthday id="birthday" />
             </div>
             <div>
               <fieldset>
-                <legend>Gender</legend>
-                <div>
-                  <label for="male">Male</label>
-                  <input type="radio" name="gender" id="male" />
-                </div>
-                <div>
-                  <label for="female">Female</label>
-                  <input type="radio" name="gender" id="female" />
+                <legend class="sub-legend">Gender</legend>
+                <div class="radio-wrapper">
+                  <div class="radio">
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="male" />
+                  </div>
+                  <div class="radio">
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="female" />
+                  </div>
                 </div>
               </fieldset>
             </div>
-            <div>
+            <div class="input-wrapper">
               <label for="drive-exp">Driving Experience</label>
               <select name="drive-exp" id="drive-exp">
                 <option value="---" selected>---</option>
@@ -58,6 +68,118 @@
               </select>
             </div>
           </fieldset>
+          <fieldset class="personal-info-wrapper">
+            <legend class="legend">Contacts</legend>
+            <div class="input-wrapper">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your email"
+              />
+            </div>
+            <div class="input-wrapper">
+              <label for="phone">Phone</label>
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="Enter your phone number"
+              />
+            </div>
+            <div class="input-wrapper">
+              <label for="address">Address</label>
+              <textarea
+                name="address"
+                id="address"
+                placeholder="Enter your address"
+              ></textarea>
+            </div>
+          </fieldset>
+          <fieldset class="personal-info-wrapper">
+            <legend class="legend">Car Info</legend>
+            <div class="input-wrapper">
+              <label for="brand">Brand</label>
+              <select name="brand" id="brand">
+                <option value="---" selected>---</option>
+                <option value="ford">Ford</option>
+                <option value="toyota">Toyota</option>
+                <option value="bmw">BMW</option>
+              </select>
+            </div>
+            <div class="input-wrapper">
+              <label for="model">Model</label>
+              <select name="model" id="model">
+                <option value="---" selected>---</option>
+                <option value="f-150">Ford F-150</option>
+                <option value="focus">Ford Focus</option>
+                <option value="toyota">Toyota Camry</option>
+                <option value="toyota">Toyota RAV4</option>
+                <option value="bmw">BMW 3 Series</option>
+                <option value="bmw">BMW X5</option>
+              </select>
+            </div>
+            <div class="checkbox">
+              <label for="used">Used</label>
+              <input type="checkbox" name="used" id="used" />
+            </div>
+            <fieldset>
+              <legend class="sub-legend">Color</legend>
+              <div class="radio-wrapper">
+                <div class="radio">
+                  <label for="red">Red</label>
+                  <input type="radio" name="color" id="red" />
+                </div>
+                <div class="radio">
+                  <label for="black">Black</label>
+                  <input type="radio" name="color" id="black" />
+                </div>
+                <div class="radio">
+                  <label for="blue">Blue</label>
+                  <input type="radio" name="color" id="blue" />
+                </div>
+                <div class="radio">
+                  <label for="white">White</label>
+                  <input type="radio" name="color" id="white" />
+                </div>
+                <div class="radio">
+                  <label for="grey">Grey</label>
+                  <input type="radio" name="color" id="grey" />
+                </div>
+              </div>
+            </fieldset>
+            <div>
+              <div class="input-wrapper">
+                <label for="price">Price, $</label>
+                <input
+                  type="range"
+                  name="price"
+                  id="price"
+                  min="10"
+                  max="100"
+                  step="10"
+                  list="price"
+                />
+              </div>
+              <datalist id="price">
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="30">30</option>
+                <option value="40">40</option>
+                <option value="50">50</option>
+                <option value="60">60</option>
+                <option value="70">70</option>
+                <option value="80">80</option>
+                <option value="90">90</option>
+                <option value="100">100</option>
+              </datalist>
+            </div>
+          </fieldset>
+          <div class="button-wrapper">
+            <button type="reset">Cancel</button>
+            <button type="submit">Submit</button>
+          </div>
         </form>
       </section>
     </article>
